@@ -1,0 +1,7 @@
+<div class="col-md-9 col-xs-12">
+  <ir-menu-item *ngFor="let item of menu | async" [menuItem]="item" (add)="shoppingCart.addItem($event)"></ir-menu-item>
+</div>
+
+<div class="col-md-3 col-xs-12">
+  <ir-shopping-cart #shoppingCart ></ir-shopping-cart>
+</div>
